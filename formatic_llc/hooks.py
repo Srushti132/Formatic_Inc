@@ -241,6 +241,8 @@ fixtures = [
                     "INVOICE",
                     "Debit Note Header",
                     "CREDIT NOTE Header",
+                    "Commissions Statement 4matic Header",
+                    "REMITTANC 4Matic"
                 ],
             ]
         ],

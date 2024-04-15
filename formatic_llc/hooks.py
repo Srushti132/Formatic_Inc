@@ -235,4 +235,11 @@ fixtures=[
             ]
         ]
     ]},
+    {"dt":"Letter Head","filters":[
+        [
+            "name","in",[
+               "PKG List","Tag List","INVOICE"
+            ]
+        ]
+    ]},
 ]

@@ -85,7 +85,7 @@
  },
  {
   "align": "Left",
-  "content": "<div style=\"display:flex;justify-content: space-between;\">\n   <div>\n       \n      {% set company_address = frappe.db.get_value('Address',\n      doc.company_address, ['address_title', 'address_type', 'address_line1',\n      'address_line2', 'city', 'country', 'state','pincode']) %}\n      {% set company_details = frappe.db.get_value('Company',\n      doc.company, ['email', 'phone_no', 'website','fax']) %}\n      \n   \n      \n      <p style=\"font-weight:  700; font-size: 24px;\">{{doc.company or ' '}}  </p>\n      <p style=\"white-space: nowrap;\">{{company_address[2] or ' '}} {{company_address[3] or ' '}}<br>{{company_address[4] or ' '}} {{company_address[6] or ' '}} {{company_address[7] or ' '}} ,{{company_address[5] or ' '}}    </p>\n      <div>\n         <div style=\"display:flex;\">\n            <p style=\"padding-right: 10px;\">{{company_details[0] or ' '}}</p>\n            <p>P:{{company_details[1] or ' '}}</p>\n         </div>\n         <div style=\"display:flex;\">\n            <p style=\"padding-right: 10px;\">{{company_details[2] or ' '}}</p>\n            <p>F:{{company_details[3] or ' '}}</p>\n         </div>\n      </div>\n   </div>\n   <div>\n      <img style=\"\" src=\"/files/4Matic logo.png\" alt=\"Company Logo\">\n      <p style=\"font-weight: 700; text-align: right;\">CREDIT NOTE </p>\n   </div>\n</div>\n",
+  "content": "<div style=\"display:flex;justify-content: space-between; padding:0px 10px;\">\n   <div>\n       \n      {% set company_address = frappe.db.get_value('Address',\n      doc.company_address, ['address_title', 'address_type', 'address_line1',\n      'address_line2', 'city', 'country', 'state','pincode']) %}\n      {% set company_details = frappe.db.get_value('Company',\n      doc.company, ['email', 'phone_no', 'website','fax']) %}\n      \n   \n      \n      <p style=\"font-weight:  700; font-size: 24px;\">{{doc.company or ' '}}  </p>\n      <p style=\"white-space: nowrap;\">{{company_address[2] or ' '}} {{company_address[3] or ' '}}<br>{{company_address[4] or ' '}} {{company_address[6] or ' '}} {{company_address[7] or ' '}} ,{{company_address[5] or ' '}}    </p>\n      <div>\n         <div style=\"display:flex;\">\n            <p style=\"padding-right: 10px;\">{{company_details[0] or ' '}}</p>\n            <p>P:{{company_details[1] or ' '}}</p>\n         </div>\n         <div style=\"display:flex;\">\n            <p style=\"padding-right: 10px;\">{{company_details[2] or ' '}}</p>\n            <p>F:{{company_details[3] or ' '}}</p>\n         </div>\n      </div>\n   </div>\n   <div>\n      <img style=\"\" src=\"/files/4Matic logo.png\" alt=\"Company Logo\">\n      <p style=\"font-weight: 700; text-align: right;\">CREDIT NOTE </p>\n   </div>\n</div>\n",
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Letter Head",
@@ -100,7 +100,7 @@
   "image_width": 0.0,
   "is_default": 0,
   "letter_head_name": "CREDIT NOTE Header",
-  "modified": "2024-04-16 10:32:24.960197",
+  "modified": "2024-04-16 10:56:55.073778",
   "name": "CREDIT NOTE Header",
   "source": "HTML"
  },

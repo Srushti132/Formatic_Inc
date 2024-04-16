@@ -64,7 +64,7 @@
  },
  {
   "align": "Left",
-  "content": "<div style=\"display:flex;justify-content: space-between;\">\n   <div>\n      {% set company_address = frappe.db.get_value('Address',\n      doc.billing_address, ['address_title', 'address_type', 'address_line1',\n      'address_line2', 'city', 'country', 'state','pincode']) %}\n      \n      {% set return_invoice_details = frappe.db.get_value('Purchase Invoice',\n      doc.return_against, ['posting_date']) %}\n      \n      {% set company_details = frappe.db.get_value('Company',\n      doc.company, ['email', 'phone_no', 'website','fax']) %}\n      \n      <p style=\"font-weight:  700; font-size: 24px;\">{{company_address[0]}}</p>\n      <p style=\"\">{{company_address[2] or ' '}} {{company_address[3] or ' '}}<br>{{company_address[4] or ' '}} {{company_address[6] or ' '}} {{company_address[7] or ' '}} ,{{company_address[5] or ' '}}    </p>\n      <div>\n         <div style=\"display:flex;\">\n            <p style=\"padding-right: 10px;\">O:{{company_details[1] or ' '}}</p>\n            <p>F: {{company_details[3] or ' '}}</p>\n         </div>\n         <div style=\"display:flex;     align-items: flex-start;\">\n            <a href=\"{{company_details[0] or ' ' }}\" style=\"color: black; padding-right: 10px;\">{{ company_details[0] or ' ' }}</a>\n            \n            <a href=\"{{ company_details[2] or ' ' }}\" style=\"color: black;\">{{ company_details[2] or ' ' }}</a>\n         </div>\n      </div>\n   </div>\n   <div>\n      <img style=\"\" src=\"/files/4Matic logo.png\" alt=\"Company Logo\">\n      <p style=\"font-weight: 700; text-align: right;\">DEBIT NOTE</p>\n   </div>\n</div>\n",
+  "content": "<div style=\"display:flex;justify-content: space-between;padding:0px 10px;\">\n   <div>\n      {% set company_address = frappe.db.get_value('Address',\n      doc.billing_address, ['address_title', 'address_type', 'address_line1',\n      'address_line2', 'city', 'country', 'state','pincode']) %}\n      \n      {% set return_invoice_details = frappe.db.get_value('Purchase Invoice',\n      doc.return_against, ['posting_date']) %}\n      \n      {% set company_details = frappe.db.get_value('Company',\n      doc.company, ['email', 'phone_no', 'website','fax']) %}\n      \n      <p style=\"font-weight:  700; font-size: 24px;\">{{company_address[0]}}</p>\n      <p style=\"\">{{company_address[2] or ' '}} {{company_address[3] or ' '}}<br>{{company_address[4] or ' '}} {{company_address[6] or ' '}} {{company_address[7] or ' '}} ,{{company_address[5] or ' '}}    </p>\n      <div>\n         <div style=\"display:flex;\">\n            <p style=\"padding-right: 10px;\">O:{{company_details[1] or ' '}}</p>\n            <p>F: {{company_details[3] or ' '}}</p>\n         </div>\n         <div style=\"display:flex;     align-items: flex-start;\">\n            <a href=\"{{company_details[0] or ' ' }}\" style=\"color: black; padding-right: 10px;\">{{ company_details[0] or ' ' }}</a>\n            \n            <a href=\"{{ company_details[2] or ' ' }}\" style=\"color: black;\">{{ company_details[2] or ' ' }}</a>\n         </div>\n      </div>\n   </div>\n   <div>\n      <img style=\"\" src=\"/files/4Matic logo.png\" alt=\"Company Logo\">\n      <p style=\"font-weight: 700; text-align: right;\">DEBIT NOTE</p>\n   </div>\n</div>\n",
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Letter Head",
@@ -79,9 +79,9 @@
   "image_width": 0.0,
   "is_default": 0,
   "letter_head_name": "Debit Note Header",
-  "modified": "2024-04-15 12:37:14.084512",
+  "modified": "2024-04-16 10:47:27.452672",
   "name": "Debit Note Header",
-  "source": "Image"
+  "source": "HTML"
  },
  {
   "align": "Left",
@@ -100,9 +100,9 @@
   "image_width": 0.0,
   "is_default": 0,
   "letter_head_name": "CREDIT NOTE Header",
-  "modified": "2024-04-15 11:30:19.694853",
+  "modified": "2024-04-16 10:32:24.960197",
   "name": "CREDIT NOTE Header",
-  "source": "Image"
+  "source": "HTML"
  },
  {
   "align": "Left",

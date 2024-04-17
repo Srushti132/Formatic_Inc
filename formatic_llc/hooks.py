@@ -227,12 +227,24 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
-fixtures=[
-    {"dt":"Print Format","filters":[
-        [
-            "module","in",[
-               "Formatic Llc"
+fixtures = [
+    {"dt": "Print Format", "filters": [["module", "in", ["Formatic Llc"]]]},
+    {
+        "dt": "Letter Head",
+        "filters": [
+            [
+                "name",
+                "in",
+                [
+                    "PKG List",
+                    "Tag List",
+                    "INVOICE",
+                    "Debit Note Header",
+                    "CREDIT NOTE Header",
+                    "Commissions Statement 4matic Header",
+                    "REMITTANC 4Matic"
+                ],
             ]
-        ]
-    ]},
+        ],
+    },
 ]

@@ -81,7 +81,7 @@
   "letter_head_name": "Commissions Statement 4matic Header",
   "modified": "2024-04-16 10:15:23.274094",
   "name": "Commissions Statement 4matic Header",
-  "source": "HTML"
+  "source": "Image"
  },
  {
   "align": "Left",
@@ -102,7 +102,7 @@
   "letter_head_name": "REMITTANC 4Matic",
   "modified": "2024-04-16 10:10:10.173566",
   "name": "REMITTANC 4Matic",
-  "source": "HTML"
+  "source": "Image"
  },
  {
   "align": "Left",
@@ -123,7 +123,7 @@
   "letter_head_name": "Debit Note Header",
   "modified": "2024-04-16 10:47:27.452672",
   "name": "Debit Note Header",
-  "source": "HTML"
+  "source": "Image"
  },
  {
   "align": "Left",
@@ -144,6 +144,6 @@
   "letter_head_name": "CREDIT NOTE Header",
   "modified": "2024-04-16 10:56:55.073778",
   "name": "CREDIT NOTE Header",
-  "source": "HTML"
+  "source": "Image"
  }
 ]

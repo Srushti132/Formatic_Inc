@@ -18,14 +18,14 @@
    "fieldname": "purchase_order_no",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Purchase order no",
-   "options": "Purchase Order"
+   "label": "Customer PO No",
+   "options": "Sales Order"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-04-12 15:58:40.567123",
+ "modified": "2024-04-22 17:41:03.623454",
  "modified_by": "Administrator",
  "module": "Formatic Llc",
  "name": "Purchase Order no",

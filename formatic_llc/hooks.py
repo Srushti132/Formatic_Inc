@@ -236,13 +236,13 @@ fixtures = [
                 "name",
                 "in",
                 [
-                    "PKG List",
-                    "Tag List",
-                    "INVOICE",
-                    "Debit Note Header",
-                    "CREDIT NOTE Header",
-                    "Commissions Statement 4matic Header",
-                    "REMITTANC 4Matic"
+                    "PACKING LIST",
+                    "TAG LIST",
+                    "SALES INVOICE",
+                    "Debit Note",
+                    "Credit Note",
+                    "Commissions Statement",
+                    "Remittance",
                 ],
             ]
         ],

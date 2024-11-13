@@ -1,7 +1,7 @@
 [
  {
   "align": "Left",
-  "content": "<div style=\"display: table; width: 100%;\">\n\n    <div style=\"display: table-cell; text-align: left; vertical-align: bottom;\">\n        <div style=\"display: flex; flex-direction: column;\">\n            {% set doc_company = frappe.get_doc('Company', doc.company) %}\n            \n            <!-- Address and Company Name -->\n            <p style=\"font-size: 11px;padding-left: 4px; font-weight: bold; color: black; text-align: start;\">\n                {% set doc_company = frappe.get_doc('Company', doc.company) %}\n                {{ doc_company.name or \"\"}}\n            </p>\n            <p style=\"font-size: 9px;padding-left: 4px; text-align: end; width:max-content;\">\n                {% if doc.company_address %}\n                {% set doc_address = frappe.get_doc('Address', doc.company_address) %}\n                {{ doc_address.address_line1 or \"\" }}{{ doc_address.address_line2 or \"\" }}\n                {{ doc_address.city or \"\" }} {{ doc_address.state or \"\" }} {{ doc_address.country or \"\" }} {{ doc_address.pincode or \"\" }}\n                {% endif %}\n            </p>\n\n            <!-- Phone, Email, Fax, Website -->\n            <div style=\"display: flex;\">\n                <div style=\"padding: 4px;\">{{doc_company.email or \"\"}}</div>\n                <div style=\"padding: 4px;\">P: {{doc_company.phone_no or \"\"}}</div>\n            </div>\n            <div style=\"display: flex;\">\n                <div style=\"padding: 4px;\">{{doc_company.website or \"\"}}</div>\n                <div style=\"padding: 4px;\">F: {{doc_company.fax or \"\"}}</div>\n            </div>\n        </div>\n    </div>\n\n    <div style=\"display: table-cell; width: 175px; vertical-align: middle; text-align: right;\">\n        <img style=\"margin-left:auto;\" src=\"/files/Final_logo_document-01.png\" alt=\"Company Logo\">\n            <p style=\"font-size: 12px;padding-left: 4px; font-weight: bold; color: black; text-align: end;margin-top:33px;\">TAG LIST\n                </p>\n    </div>\n</div>",
+  "content": "<div style=\"display: table; width: 100%;\">\n\n    <div style=\"display: table-cell; text-align: left; vertical-align: bottom;\">\n        <div style=\"display: flex; flex-direction: column;\">\n            {% set doc_company = frappe.get_doc('Company', doc.company) %}\n            \n            <!-- Address and Company Name -->\n            <p style=\"font-size: 11px;padding-left: 4px; font-weight: bold; color: black; text-align: start;\">\n                {% set doc_company = frappe.get_doc('Company', doc.company) %}\n                {{ doc_company.name or \"\"}}\n            </p>\n            <p style=\"font-size: 9px;padding-left: 4px; text-align: end; width:max-content;\">\n                {% if doc.company_address %}\n                {% set doc_address = frappe.get_doc('Address', doc.company_address) %}\n                {{ doc_address.address_line1 or \"\" }}{{ doc_address.address_line2 or \"\" }}\n                {{ doc_address.city or \"\" }} {{ doc_address.state or \"\" }} {{ doc_address.country or \"\" }} {{ doc_address.pincode or \"\" }}\n                {% endif %}\n            </p>\n\n            <!-- Phone, Email, Fax, Website -->\n            <div style=\"display: flex;\">\n                <div style=\"padding: 4px;\">{{doc_company.email or \"\"}}</div>\n                <div style=\"padding: 4px;\">P: {{doc_company.phone_no or \"\"}}</div>\n            </div>\n            <div style=\"display: flex;\">\n                <div style=\"padding: 4px;\">{{doc_company.website or \"\"}}</div>\n                <div style=\"padding: 4px;\">F: {{doc_company.fax or \"\"}}</div>\n            </div>\n        </div>\n    </div>\n\n    <div style=\"display: table-cell; width: 175px; vertical-align: middle; text-align: right;\">\n        <img style=\"margin-left:auto;\" src=\"/files/Final_logo_3D-01-01.png\" alt=\"Company Logo\">\n            <p style=\"font-size: 12px;padding-left: 4px; font-weight: bold; color: black; text-align: end;margin-top:33px;\">TAG LIST\n                </p>\n    </div>\n</div>",
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Letter Head",
@@ -10,15 +10,17 @@
   "footer_image": null,
   "footer_image_height": 0.0,
   "footer_image_width": 0.0,
+  "footer_script": null,
   "footer_source": "HTML",
+  "header_script": null,
   "image": null,
   "image_height": 0.0,
   "image_width": 0.0,
-  "is_default": 0,
+  "is_default": 1,
   "letter_head_name": "TAG LIST",
-  "modified": "2024-04-14 22:15:09.521550",
+  "modified": "2024-11-13 00:28:13.440378",
   "name": "TAG LIST",
-  "source": "Image"
+  "source": "HTML"
  },
  {
   "align": "Left",
@@ -31,7 +33,9 @@
   "footer_image": null,
   "footer_image_height": 0.0,
   "footer_image_width": 0.0,
+  "footer_script": null,
   "footer_source": "HTML",
+  "header_script": null,
   "image": null,
   "image_height": 0.0,
   "image_width": 0.0,
@@ -39,7 +43,7 @@
   "letter_head_name": "Commissions Statement",
   "modified": "2024-04-18 15:04:32.830760",
   "name": "Commissions Statement",
-  "source": "HTML"
+  "source": "Image"
  },
  {
   "align": "Left",
@@ -52,7 +56,9 @@
   "footer_image": null,
   "footer_image_height": 0.0,
   "footer_image_width": 0.0,
+  "footer_script": null,
   "footer_source": "HTML",
+  "header_script": null,
   "image": null,
   "image_height": 0.0,
   "image_width": 0.0,
@@ -60,11 +66,11 @@
   "letter_head_name": "Remittance",
   "modified": "2024-04-18 15:04:23.088294",
   "name": "Remittance",
-  "source": "HTML"
+  "source": "Image"
  },
  {
   "align": "Left",
-  "content": "<div style=\"display: table; width: 100%;\">\n\n    <div style=\"display: table-cell; text-align: left; vertical-align: bottom;\">\n        <div style=\"display: flex; flex-direction: column;\">\n            {% set doc_company = frappe.get_doc('Company', doc.company) %}\n            \n            <!-- Address and Company Name -->\n            <p style=\"font-size: 11px;padding-left: 4px; font-weight: bold; color: black; text-align: start;\">\n                {% set doc_company = frappe.get_doc('Company', doc.company) %}\n                {{ doc_company.name or \"\"}}\n            </p>\n            <p style=\"font-size: 9px;padding-left: 4px; text-align: start;\">\n                {% if doc.company_address %}\n                {% set doc_address = frappe.get_doc('Address', doc.company_address) %}\n                {{ doc_address.address_line1 or \"\" }}{{ doc_address.address_line2 or \"\" }}\n                {{ doc_address.city or \"\" }} {{ doc_address.state or \"\" }} {{ doc_address.country or \"\" }} {{ doc_address.pincode or \"\" }}\n                {% endif %}\n            </p>\n\n            <!-- Phone, Email, Fax, Website -->\n            <div style=\"display: flex;\">\n                <div style=\"padding: 4px;\">{{doc_company.email or \"\"}}</div>\n                <div style=\"padding: 4px;\">P: {{doc_company.phone_no or \"\"}}</div>\n            </div>\n            <div style=\"display: flex;\">\n                <div style=\"padding: 4px;\">{{doc_company.website or \"\"}}</div>\n                <div style=\"padding: 4px;\">F: {{doc_company.fax or \"\"}}</div>\n            </div>\n        </div>\n    </div>\n\n    <div style=\"display: table-cell; width: 175px; vertical-align: middle; text-align: right;\">\n        <img style=\"margin-left:auto;\" src=\"/files/Final_logo_document-01.png\" alt=\"Company Logo\">\n            <p style=\"font-size: 12px; font-weight: bold; color: black; text-align: end;margin-top:33px;\">PACKING LIST\n                </p>\n    </div>\n</div>",
+  "content": "<div style=\"display: table; width: 100%;\">\n\n    <div style=\"display: table-cell; text-align: left; vertical-align: bottom;\">\n        <div style=\"display: flex; flex-direction: column;\">\n            {% set doc_company = frappe.get_doc('Company', doc.company) %}\n            \n            <!-- Address and Company Name -->\n            <p style=\"font-size: 11px;padding-left: 4px; font-weight: bold; color: black; text-align: start;\">\n                {% set doc_company = frappe.get_doc('Company', doc.company) %}\n                {{ doc_company.name or \"\"}}\n            </p>\n            <p style=\"font-size: 9px;padding-left: 4px; text-align: start;\">\n                {% if doc.company_address %}\n                {% set doc_address = frappe.get_doc('Address', doc.company_address) %}\n                {{ doc_address.address_line1 or \"\" }}{{ doc_address.address_line2 or \"\" }}\n                {{ doc_address.city or \"\" }} {{ doc_address.state or \"\" }} {{ doc_address.country or \"\" }} {{ doc_address.pincode or \"\" }}\n                {% endif %}\n            </p>\n\n            <!-- Phone, Email, Fax, Website -->\n            <div style=\"display: flex;\">\n                <div style=\"padding: 4px;\">{{doc_company.email or \"\"}}</div>\n                <div style=\"padding: 4px;\">P: {{doc_company.phone_no or \"\"}}</div>\n            </div>\n            <div style=\"display: flex;\">\n                <div style=\"padding: 4px;\">{{doc_company.website or \"\"}}</div>\n                <div style=\"padding: 4px;\">F: {{doc_company.fax or \"\"}}</div>\n            </div>\n        </div>\n    </div>\n\n    <div style=\"display: table-cell; width: 175px; vertical-align: middle; text-align: right;\">\n        <img style=\"margin-left:auto;\" src=\"/files/Final_logo_3D-01-01.png\" alt=\"Company Logo\">\n            <p style=\"font-size: 12px; font-weight: bold; color: black; text-align: end;margin-top:33px;\">PACKING LIST\n                </p>\n    </div>\n</div>",
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Letter Head",
@@ -73,13 +79,15 @@
   "footer_image": null,
   "footer_image_height": 0.0,
   "footer_image_width": 0.0,
+  "footer_script": null,
   "footer_source": "HTML",
+  "header_script": null,
   "image": null,
   "image_height": 0.0,
   "image_width": 0.0,
   "is_default": 0,
   "letter_head_name": "PACKING LIST",
-  "modified": "2024-04-17 13:06:24.425049",
+  "modified": "2024-11-13 00:28:24.107799",
   "name": "PACKING LIST",
   "source": "HTML"
  },
@@ -94,7 +102,9 @@
   "footer_image": null,
   "footer_image_height": 0.0,
   "footer_image_width": 0.0,
+  "footer_script": null,
   "footer_source": "HTML",
+  "header_script": null,
   "image": null,
   "image_height": 0.0,
   "image_width": 0.0,
@@ -102,7 +112,7 @@
   "letter_head_name": "Credit Note",
   "modified": "2024-04-18 15:02:59.481374",
   "name": "Credit Note",
-  "source": "HTML"
+  "source": "Image"
  },
  {
   "align": "Left",
@@ -115,7 +125,9 @@
   "footer_image": null,
   "footer_image_height": 0.0,
   "footer_image_width": 0.0,
+  "footer_script": null,
   "footer_source": "HTML",
+  "header_script": null,
   "image": null,
   "image_height": 0.0,
   "image_width": 0.0,
@@ -123,11 +135,11 @@
   "letter_head_name": "Debit Note",
   "modified": "2024-04-18 15:03:41.512114",
   "name": "Debit Note",
-  "source": "HTML"
+  "source": "Image"
  },
  {
   "align": "Left",
-  "content": "<div style=\"display: table; width: 100%;\">\n\n    <div style=\"display: table-cell; text-align: left; vertical-align: bottom;\">\n        <div style=\"display: flex; flex-direction: column;\">\n            {% set doc_company = frappe.get_doc('Company', doc.company) %}\n            \n            <!-- Address and Company Name -->\n            <p style=\"font-size: 11px;padding-left: 4px; font-weight: bold; color: black; text-align: start;\">\n                {% set doc_company = frappe.get_doc('Company', doc.company) %}\n                {{ doc_company.name or \"\"}}\n            </p>\n            <p style=\"font-size: 9px;padding-left: 4px; text-align: end; width:max-content;\">\n                {% if doc.company_address %}\n                {% set doc_address = frappe.get_doc('Address', doc.company_address) %}\n                {{ doc_address.address_line1 or \"\" }}{{ doc_address.address_line2 or \"\" }}\n                {{ doc_address.city or \"\" }} {{ doc_address.state or \"\" }} {{ doc_address.country or \"\" }} {{ doc_address.pincode or \"\" }}\n                {% endif %}\n            </p>\n\n            <!-- Phone, Email, Fax, Website -->\n            <div style=\"display: flex;\">\n                <div style=\"padding: 4px;\">{{doc_company.email or \"\"}}</div>\n                <div style=\"padding: 4px;\">P: {{doc_company.phone_no or \"\"}}</div>\n            </div>\n            <div style=\"display: flex;\">\n                <div style=\"padding: 4px;\">{{doc_company.website or \"\"}}</div>\n                <div style=\"padding: 4px;\">F: {{doc_company.fax or \"\"}}</div>\n            </div>\n        </div>\n    </div>\n\n    <div style=\"display: table-cell; width: 175px; vertical-align: middle; text-align: right;\">\n        <img style=\"margin-left:auto;\" src=\"/files/Final_logo_document-01.png\" alt=\"Company Logo\">\n            <p style=\"font-size: 12px;padding-left: 4px; font-weight: bold; color: black; text-align: end;margin-top:33px;\">INVOICE\n                </p>\n    </div>\n</div>",
+  "content": "<div style=\"display: table; width: 100%;\">\n\n    <div style=\"display: table-cell; text-align: left; vertical-align: bottom;\">\n        <div style=\"display: flex; flex-direction: column;\">\n            {% set doc_company = frappe.get_doc('Company', doc.company) %}\n            \n            <!-- Address and Company Name -->\n            <p style=\"font-size: 11px;padding-left: 4px; font-weight: bold; color: black; text-align: start;\">\n                {% set doc_company = frappe.get_doc('Company', doc.company) %}\n                {{ doc_company.name or \"\"}}\n            </p>\n            <p style=\"font-size: 9px;padding-left: 4px; text-align: end; width:max-content;\">\n                {% if doc.company_address %}\n                {% set doc_address = frappe.get_doc('Address', doc.company_address) %}\n                {{ doc_address.address_line1 or \"\" }}{{ doc_address.address_line2 or \"\" }}\n                {{ doc_address.city or \"\" }} {{ doc_address.state or \"\" }} {{ doc_address.country or \"\" }} {{ doc_address.pincode or \"\" }}\n                {% endif %}\n            </p>\n\n            <!-- Phone, Email, Fax, Website -->\n            <div style=\"display: flex;\">\n                <div style=\"padding: 4px;\">{{doc_company.email or \"\"}}</div>\n                <div style=\"padding: 4px;\">P: {{doc_company.phone_no or \"\"}}</div>\n            </div>\n            <div style=\"display: flex;\">\n                <div style=\"padding: 4px;\">{{doc_company.website or \"\"}}</div>\n                <div style=\"padding: 4px;\">F: {{doc_company.fax or \"\"}}</div>\n            </div>\n        </div>\n    </div>\n\n    <div style=\"display: table-cell; width: 175px; vertical-align: middle; text-align: right;\">\n        <img style=\"margin-left:auto;\" src=\"/files/Final_logo_3D-01-01.png\" alt=\"Company Logo\">\n            <p style=\"font-size: 12px;padding-left: 4px; font-weight: bold; color: black; text-align: end;margin-top:5px;\">INVOICE\n                </p>\n    </div>\n</div>",
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Letter Head",
@@ -136,14 +148,16 @@
   "footer_image": null,
   "footer_image_height": 0.0,
   "footer_image_width": 0.0,
+  "footer_script": null,
   "footer_source": "HTML",
+  "header_script": null,
   "image": null,
   "image_height": 0.0,
   "image_width": 0.0,
   "is_default": 0,
   "letter_head_name": "SALES INVOICE",
-  "modified": "2024-04-14 21:45:20.791505",
+  "modified": "2024-11-13 00:28:54.644016",
   "name": "SALES INVOICE",
-  "source": "Image"
+  "source": "HTML"
  }
 ]

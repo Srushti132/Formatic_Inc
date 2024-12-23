@@ -246,6 +246,7 @@ fixtures = [
                     "Credit Note",
                     "Commissions Statement",
                     "Remittance",
+                    "Quotation"
                 ],
             ]
         ],

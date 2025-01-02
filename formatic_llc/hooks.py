@@ -132,6 +132,11 @@ doctype_js = {
 # 		"on_trash": "method"
 # 	}
 # }
+doc_events = {
+    "Quotation": {
+        "autoname": "formatic_llc.py.quotation.custom_autoname"
+    }
+}
 
 # Scheduled Tasks
 # ---------------

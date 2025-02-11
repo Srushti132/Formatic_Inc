@@ -251,7 +251,8 @@ fixtures = [
                     "Credit Note",
                     "Commissions Statement",
                     "Remittance",
-                    "Quotation"
+                    "Quotation",
+                    "Quotation Overlap"
                 ],
             ]
         ],
